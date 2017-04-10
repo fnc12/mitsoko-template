@@ -1,0 +1,6 @@
+.DS_Store
+Core/.DS_Store
+Core/Modules/.DS_Store
+proj.ios/.DS_Store
+proj.android/app/src/main/obj/local/*
+proj.android/app/src/main/libs/*

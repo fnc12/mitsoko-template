@@ -1,0 +1,3 @@
+[submodule "Core/Mitsoko"]
+	path = Core/Mitsoko
+	url = https://github.com/fnc12/Mitsoko
