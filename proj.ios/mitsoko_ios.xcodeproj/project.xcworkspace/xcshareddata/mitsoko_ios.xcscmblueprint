@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CE573616AE0EB4ABAA73E55CE0715DA882008049",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CE573616AE0EB4ABAA73E55CE0715DA882008049" : 9223372036854775807,
+    "F36721AF95BC308AFF37B221A413B24CAAC8E625" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40B42640-60A3-49D5-BFF0-D45164652895",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CE573616AE0EB4ABAA73E55CE0715DA882008049" : "mitsoko-template\/",
+    "F36721AF95BC308AFF37B221A413B24CAAC8E625" : "mitsoko-template\/Core\/Mitsoko\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mitsoko_ios",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "proj.ios\/mitsoko_ios.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fnc12\/mitsoko-template.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CE573616AE0EB4ABAA73E55CE0715DA882008049"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fnc12\/Mitsoko",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F36721AF95BC308AFF37B221A413B24CAAC8E625"
+    }
+  ]
+}
