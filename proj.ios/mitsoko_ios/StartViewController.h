@@ -11,7 +11,7 @@
 
 @interface StartViewController : BaseVC
 
-@property (readonly) UITextField *textField;
+//@property (readonly) UITextField *textField;
 @property (readonly) UIButton *mainBtn;
 
 @end

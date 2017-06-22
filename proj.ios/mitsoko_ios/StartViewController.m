@@ -20,16 +20,16 @@
     CGPoint o;
     CGSize b = self.view.bounds.size;
     
-    _textField = [UITextField new];
+    /*_textField = [UITextField new];
     s = CGSizeMake(b.width / 2, 40);
     o = CGPointMake((b.width - s.width) / 2, 100);
     _textField.frame = (CGRect){o, s};
     _textField.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:_textField];
+    [self.view addSubview:_textField];*/
     
     _mainBtn = [UIButton new];
-    s = CGSizeMake(b.width * 0.4, 40);
-    o = CGPointMake((b.width - s.width) / 2, CGRectGetMaxY(_textField.frame) + 30);
+    s = CGSizeMake(b.width * 0.7, 40);
+    o = CGPointMake((b.width - s.width) / 2, 100 + 30);
     _mainBtn.frame = (CGRect){o, s};
     [self.view addSubview:_mainBtn];
 }

@@ -173,6 +173,11 @@
 		E90EA7721E9A26D600D76E05 /* ModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90EA76B1E9A26D600D76E05 /* ModalView.m */; };
 		E90EA7731E9A26D600D76E05 /* NI.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90EA76D1E9A26D600D76E05 /* NI.mm */; };
 		E90EA7741E9A26D600D76E05 /* PickerModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90EA76F1E9A26D600D76E05 /* PickerModalView.m */; };
+		E94931401EEAA109008263CE /* VkApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E949313E1EEAA109008263CE /* VkApi.cpp */; };
+		E94931441EEAA232008263CE /* Country.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94931421EEAA232008263CE /* Country.cpp */; };
+		E9F45E661EFAD58E001D9372 /* Presenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F45E621EFAD58E001D9372 /* Presenter.cpp */; };
+		E9F45E671EFAD58E001D9372 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F45E641EFAD58E001D9372 /* View.cpp */; };
+		E9F45E6A1EFAD600001D9372 /* CountriesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F45E691EFAD600001D9372 /* CountriesVC.m */; };
 		E9F5A52E1EA33FC4001BE2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5A52D1EA33FC4001BE2B7 /* Foundation.framework */; };
 		E9F5A5301EA33FC8001BE2B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5A52F1EA33FC8001BE2B7 /* CoreGraphics.framework */; };
 		E9F5A5321EA33FCC001BE2B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F5A5311EA33FCC001BE2B7 /* UIKit.framework */; };
@@ -539,6 +544,17 @@
 		E90EA76D1E9A26D600D76E05 /* NI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NI.mm; path = "mitsoko-util/NI.mm"; sourceTree = "<group>"; };
 		E90EA76E1E9A26D600D76E05 /* PickerModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerModalView.h; path = "mitsoko-util/PickerModalView.h"; sourceTree = "<group>"; };
 		E90EA76F1E9A26D600D76E05 /* PickerModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerModalView.m; path = "mitsoko-util/PickerModalView.m"; sourceTree = "<group>"; };
+		E949313E1EEAA109008263CE /* VkApi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VkApi.cpp; path = ../../Core/Services/VkApi.cpp; sourceTree = "<group>"; };
+		E949313F1EEAA109008263CE /* VkApi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VkApi.hpp; path = ../../Core/Services/VkApi.hpp; sourceTree = "<group>"; };
+		E94931421EEAA232008263CE /* Country.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Country.cpp; path = ../../Core/DataModel/Country.cpp; sourceTree = "<group>"; };
+		E94931431EEAA232008263CE /* Country.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Country.hpp; path = ../../Core/DataModel/Country.hpp; sourceTree = "<group>"; };
+		E94931471EEAA2C0008263CE /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		E9F45E621EFAD58E001D9372 /* Presenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Presenter.cpp; sourceTree = "<group>"; };
+		E9F45E631EFAD58E001D9372 /* Presenter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Presenter.hpp; sourceTree = "<group>"; };
+		E9F45E641EFAD58E001D9372 /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
+		E9F45E651EFAD58E001D9372 /* View.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = View.hpp; sourceTree = "<group>"; };
+		E9F45E681EFAD600001D9372 /* CountriesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountriesVC.h; sourceTree = "<group>"; };
+		E9F45E691EFAD600001D9372 /* CountriesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountriesVC.m; sourceTree = "<group>"; };
 		E9F5A52D1EA33FC4001BE2B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9F5A52F1EA33FC8001BE2B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E9F5A5311EA33FCC001BE2B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -602,6 +618,8 @@
 				E90EA5621E9A111300D76E05 /* Core */,
 				E90EA5321E9A07FF00D76E05 /* AppDelegate.h */,
 				E90EA5331E9A07FF00D76E05 /* AppDelegate.m */,
+				E9F45E681EFAD600001D9372 /* CountriesVC.h */,
+				E9F45E691EFAD600001D9372 /* CountriesVC.m */,
 				E90EA5351E9A07FF00D76E05 /* StartViewController.h */,
 				E90EA5361E9A07FF00D76E05 /* StartViewController.m */,
 				E90EA5381E9A07FF00D76E05 /* Main.storyboard */,
@@ -642,6 +660,9 @@
 		E90EA5621E9A111300D76E05 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E94931451EEAA2B6008263CE /* libs */,
+				E94931411EEAA220008263CE /* DataModel */,
+				E949313D1EEAA0DB008263CE /* Services */,
 				E90EA7581E9A246F00D76E05 /* Modules */,
 				E90EA7551E9A14A800D76E05 /* R */,
 				E90EA5631E9A111D00D76E05 /* Mitsoko */,
@@ -1251,6 +1272,7 @@
 		E90EA7581E9A246F00D76E05 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E9F45E611EFAD58E001D9372 /* Countries */,
 				E90EA7591E9A246F00D76E05 /* Start */,
 			);
 			name = Modules;
@@ -1295,6 +1317,52 @@
 				E90EA76F1E9A26D600D76E05 /* PickerModalView.m */,
 			);
 			name = "mitsoko-util";
+			sourceTree = "<group>";
+		};
+		E949313D1EEAA0DB008263CE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E949313E1EEAA109008263CE /* VkApi.cpp */,
+				E949313F1EEAA109008263CE /* VkApi.hpp */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		E94931411EEAA220008263CE /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E94931421EEAA232008263CE /* Country.cpp */,
+				E94931431EEAA232008263CE /* Country.hpp */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		E94931451EEAA2B6008263CE /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				E94931461EEAA2C0008263CE /* json */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		E94931461EEAA2C0008263CE /* json */ = {
+			isa = PBXGroup;
+			children = (
+				E94931471EEAA2C0008263CE /* json.hpp */,
+			);
+			name = json;
+			path = ../../Core/libs/json;
+			sourceTree = "<group>";
+		};
+		E9F45E611EFAD58E001D9372 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				E9F45E621EFAD58E001D9372 /* Presenter.cpp */,
+				E9F45E631EFAD58E001D9372 /* Presenter.hpp */,
+				E9F45E641EFAD58E001D9372 /* View.cpp */,
+				E9F45E651EFAD58E001D9372 /* View.hpp */,
+			);
+			path = Countries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1450,6 +1518,7 @@
 				E90EA7031E9A111D00D76E05 /* Thread.cpp in Sources */,
 				E90EA7081E9A111D00D76E05 /* Dispatch.cpp in Sources */,
 				E90EA6D81E9A111D00D76E05 /* Editable.cpp in Sources */,
+				E94931441EEAA232008263CE /* Country.cpp in Sources */,
 				E90EA6C11E9A111D00D76E05 /* AlertDialog.cpp in Sources */,
 				E90EA6C41E9A111D00D76E05 /* Fragment.cpp in Sources */,
 				E90EA6EF1E9A111D00D76E05 /* LinearLayout.cpp in Sources */,
@@ -1480,6 +1549,7 @@
 				E90EA7381E9A111D00D76E05 /* NavigationBar.cpp in Sources */,
 				E90EA7471E9A111D00D76E05 /* TextInputTraits.cpp in Sources */,
 				E90EA71D1E9A111D00D76E05 /* IndexSet.cpp in Sources */,
+				E9F45E6A1EFAD600001D9372 /* CountriesVC.m in Sources */,
 				E90EA72E1E9A111D00D76E05 /* Application.cpp in Sources */,
 				E90EA6FD1E9A111D00D76E05 /* Iterable.cpp in Sources */,
 				E90EA7171E9A111D00D76E05 /* Array.cpp in Sources */,
@@ -1508,6 +1578,7 @@
 				E90EA6C21E9A111D00D76E05 /* DatePickerDialog.cpp in Sources */,
 				E90EA6C51E9A111D00D76E05 /* Context.cpp in Sources */,
 				E90EA70D1E9A111D00D76E05 /* AffineTransform.cpp in Sources */,
+				E94931401EEAA109008263CE /* VkApi.cpp in Sources */,
 				E90EA6E21E9A111D00D76E05 /* WindowManager.cpp in Sources */,
 				E90EA6FB1E9A111D00D76E05 /* Class.cpp in Sources */,
 				E90EA5371E9A07FF00D76E05 /* StartViewController.m in Sources */,
@@ -1529,6 +1600,7 @@
 				E90EA6F81E9A111D00D76E05 /* FilterOutputStream.cpp in Sources */,
 				E90EA7341E9A111D00D76E05 /* Image.cpp in Sources */,
 				E90EA6DC1E9A111D00D76E05 /* InputMethodManager.cpp in Sources */,
+				E9F45E661EFAD58E001D9372 /* Presenter.cpp in Sources */,
 				E90EA6FF1E9A111D00D76E05 /* List.cpp in Sources */,
 				E90EA7741E9A26D600D76E05 /* PickerModalView.m in Sources */,
 				E90EA6CC1E9A111D00D76E05 /* Uri.cpp in Sources */,
@@ -1539,6 +1611,7 @@
 				E90EA7201E9A111D00D76E05 /* MutableURLRequest.cpp in Sources */,
 				E90EA72C1E9A111D00D76E05 /* ActionSheet.cpp in Sources */,
 				E90EA6C31E9A111D00D76E05 /* Dialog.cpp in Sources */,
+				E9F45E671EFAD58E001D9372 /* View.cpp in Sources */,
 				E90EA71A1E9A111D00D76E05 /* Dictionary.cpp in Sources */,
 				E90EA6D71E9A111D00D76E05 /* AppCompatActivity.cpp in Sources */,
 				E90EA7141E9A111D00D76E05 /* Annotation.cpp in Sources */,
@@ -1743,6 +1816,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				DEVELOPMENT_TEAM = QDTPG5DB79;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Core/libs";
 				INFOPLIST_FILE = mitsoko_ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1751,7 +1825,7 @@
 					"-x",
 					"objective-c++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.mitsokoframework.mitsoko-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.mitsokoframework.table-list-view-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../Core";
 			};
@@ -1764,6 +1838,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				DEVELOPMENT_TEAM = QDTPG5DB79;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Core/libs";
 				INFOPLIST_FILE = mitsoko_ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1772,7 +1847,7 @@
 					"-x",
 					"objective-c++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.mitsokoframework.mitsoko-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.mitsokoframework.table-list-view-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../Core";
 			};

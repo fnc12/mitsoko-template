@@ -22,10 +22,10 @@ const std::string Modules::Start::View::viewName =
 void Modules::Start::View::init(){
 #ifdef __APPLE__
     UI::ViewController vc(handle);
-    vc.view().setBackgroundColor(UI::Color::magentaColor());
+    vc.view().setBackgroundColor(UI::Color::blackColor());
     mainBtn().setOnTouchUpInside(std::bind(mainBtnTouched), this);
 #else
-    editText().getRootView().setBackgroundColor(Color::MAGENTA());
+    mainBtn().getRootView().setBackgroundColor(Color::BLACK());
     mainBtn().setOnClickListener(std::bind(mainBtnTouched), *this);
 #endif
 }
@@ -45,14 +45,6 @@ void Modules::Start::View::setMainBtnTitle(const std::string &value) {
     mainBtn().setTitle(value, UI::Control::State::Normal);
 #else
     mainBtn().setText(value);
-#endif
-}
-
-std::string Modules::Start::View::textFromTextField() {
-#ifdef __APPLE__
-    return textField().text();
-#else
-    return editText().getText().toString().c_str();
 #endif
 }
 
@@ -77,10 +69,18 @@ void Modules::Start::View::showAlert(const std::string &title, const std::string
 #endif
 }
 
-void Modules::Start::View::setTextFieldText(const std::string &value) {
+void Modules::Start::View::showProgress() {
 #ifdef __APPLE__
-    textField().setText(value);
+    UI::Application::sharedApplication().setNetworkActivityIndicatorVisible(true);
 #else
-    editText().setText(value);
+    java::lang::Object(handle).sendMessage<void>("showProgress");
+#endif
+}
+
+void Modules::Start::View::hideProgress() {
+#ifdef __APPLE__
+    UI::Application::sharedApplication().setNetworkActivityIndicatorVisible(false);
+#else
+    java::lang::Object(handle).sendMessage<void>("hideProgress");
 #endif
 }

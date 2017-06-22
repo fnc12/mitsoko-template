@@ -13,7 +13,7 @@ namespace Modules {
         struct View : public Mitsoko::View {
             static const std::string viewName;
 #ifdef __APPLE__
-            FIELD_DECL(UI::TextField, textField);
+//            FIELD_DECL(UI::TextField, textField);
             FIELD_DECL(UI::Button, mainBtn);
 #else
             FIELD_DECL(EditText, editText);
@@ -27,9 +27,9 @@ namespace Modules {
             
             void showAlert(const std::string &title, const std::string &message, std::function<void()> dismissedCallback);
             
-            std::string textFromTextField();
+            void showProgress();
             
-            void setTextFieldText(const std::string &value);
+            void hideProgress();
         
             std::function<void()> mainBtnTouched;
         };

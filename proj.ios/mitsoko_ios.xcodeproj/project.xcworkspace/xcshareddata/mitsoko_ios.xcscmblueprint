@@ -9,8 +9,8 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40B42640-60A3-49D5-BFF0-D45164652895",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "CE573616AE0EB4ABAA73E55CE0715DA882008049" : "mitsoko-template\/",
-    "F36721AF95BC308AFF37B221A413B24CAAC8E625" : "mitsoko-template\/Core\/Mitsoko\/"
+    "CE573616AE0EB4ABAA73E55CE0715DA882008049" : "table-list-view-example\/",
+    "F36721AF95BC308AFF37B221A413B24CAAC8E625" : "table-list-view-example\/Core\/Mitsoko\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "mitsoko_ios",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
