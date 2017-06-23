@@ -111,7 +111,8 @@ public class Network{
 
         String mHttpMethod = "GET";
         String mUrl = null;
-        String mBodyString = null;
+        //        String mBodyString = null;
+        byte[] mBody = null;
 
         byte[] mResponseData = null;
         Bitmap mBitmap = null;
@@ -139,12 +140,22 @@ public class Network{
         }
 
         public void setBodyString(String bodyString){
-            mBodyString = bodyString;
+//            mBodyString = bodyString;
+            if(null != bodyString) {
+                try{
+                    mBody = bodyString.getBytes("UTF-8");
+                }catch (Exception e){
+                    e.printStackTrace();
+                    mBody = null;
+                }
+            }else{
+                mBody = null;
+            }
         }
 
-        public String getBodyString(){
+        /*public String getBodyString(){
             return mBodyString;
-        }
+        }*/
 
         public void setValueForHTTPHeaderField(String value, String field) {
             mHeaders.add(new Header(field, value));
@@ -203,12 +214,9 @@ public class Network{
                 }
 
                 //  write body if it exists..
-                if(!isGet && null != mBodyString){
+                if(!isGet && null != mBody){
                     DataOutputStream wr = new DataOutputStream(httpConnection.getOutputStream());
-                    System.out.println("mBodyString = " + mBodyString);
-//                    wr.writeBytes(mBodyString);
-                    byte[] buf = mBodyString.getBytes("UTF-8");
-                    wr.write(buf, 0, buf.length);
+                    wr.write(mBody, 0, mBody.length);
                     wr.flush();
                     wr.close();
                 }
@@ -219,23 +227,8 @@ public class Network{
                 String responseMessage = httpConnection.getResponseMessage();
                 responseTuple.setResponse(new ResponseTuple.Response(responseCode, responseMessage));
 
-                System.out.println("responseMessage = "+responseMessage);
                 if(responseCode / 100 == 2) {
                     responseTuple.setDataStream(httpConnection.getInputStream());
-//                    bitmap = BitmapFactory.decodeStream(httpConnection.getInputStream());
-//                if (responseCode == HttpURLConnection.HTTP_OK) {
-                    /*if(!isGet){
-                        BufferedReader br = new BufferedReader(new InputStreamReader(httpConnection.getInputStream()));
-                        StringBuilder sb = new StringBuilder();
-                        String line;
-                        while ((line = br.readLine()) != null) {
-                            sb.append(line + "\n");
-                        }
-                        br.close();
-                        String result = sb.toString();
-                        System.out.println("result = "+result);
-                    }*/
-//                    return result;
                 }else{
                     responseTuple.setDataStream(httpConnection.getErrorStream());
                     responseTuple.setError(new ResponseTuple.Error(responseCode, responseMessage));
@@ -263,16 +256,16 @@ public class Network{
                     try{
                         mResponseData = inputStreamToByte(responseTuple.getDataStream());
 //                        System.out.println("mResponseData = " + new String(mResponseData));
-                        System.out.println("first ten bytes:");
+                        /*System.out.println("first ten bytes:");
                         for(int i=0; i<10; ++i) {
                             System.out.print(mResponseData[i]);
                             System.out.println();
-                        }
+                        }*/
                     }catch (IOException e){
                         e.printStackTrace();
                     }
                     break;
-                case 2:     //  Viper::Image
+                case 2:     //  Mitsoko::Image
                     mBitmap = BitmapFactory.decodeStream(responseTuple.getDataStream());
                     break;
             }
@@ -303,11 +296,6 @@ public class Network{
                             responseTuple.getError());
                     break;
             }
-
-            /*byte[] bytes = s.getBytes();
-            Bitmap bm = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-
-            imageView.setImageBitmap(bm);*/
         }
 
         @SuppressWarnings("empty-statement")
