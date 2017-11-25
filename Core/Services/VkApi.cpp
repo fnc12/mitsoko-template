@@ -23,6 +23,7 @@ void Services::VkApi::requestCountries(const std::string &lang,
     request.url("https://api.vk.com/method/database.getCountries", {
         { "lang", lang },
     });
+    request.timeout(10);
     request.performAsync([=](Response response, std::vector<char> data, Error error){
         if(response){
             auto statusCode = response.statusCode();

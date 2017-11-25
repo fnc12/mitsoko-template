@@ -23,8 +23,9 @@ static NSString* clientStringFromStdString(const std::string&);
     static dispatch_once_t onceToken;
     static id res;
     dispatch_once(&onceToken, ^{
-        res=[self new];
+        res = [self new];
     });
+//    [NSMutableURLRequest new].timeoutInterval
     return res;
 }
 

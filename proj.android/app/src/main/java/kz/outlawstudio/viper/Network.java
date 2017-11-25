@@ -111,8 +111,8 @@ public class Network{
 
         String mHttpMethod = "GET";
         String mUrl = null;
-        //        String mBodyString = null;
         byte[] mBody = null;
+        double mTimeout = -1;
 
         byte[] mResponseData = null;
         Bitmap mBitmap = null;
@@ -153,9 +153,9 @@ public class Network{
             }
         }
 
-        /*public String getBodyString(){
-            return mBodyString;
-        }*/
+        public void setTimeout(double timeout) {
+            mTimeout = timeout;
+        }
 
         public void setValueForHTTPHeaderField(String value, String field) {
             mHeaders.add(new Header(field, value));
@@ -199,6 +199,11 @@ public class Network{
                 URL url = new URL(mUrl);
                 HttpURLConnection httpConnection = (HttpURLConnection)url.openConnection();
                 httpConnection.setRequestMethod(mHttpMethod);
+                if(mTimeout != -1) {
+                    int timeoutValue = (int)(mTimeout * 1000);
+                    httpConnection.setConnectTimeout(timeoutValue);
+                    httpConnection.setReadTimeout(timeoutValue);
+                }
 //            httpConnection.setRequestProperty("Content-length", "0");
                 httpConnection.setUseCaches(false);
                 httpConnection.setAllowUserInteraction(false);

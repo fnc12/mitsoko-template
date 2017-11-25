@@ -175,6 +175,7 @@
 		E90EA7741E9A26D600D76E05 /* PickerModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90EA76F1E9A26D600D76E05 /* PickerModalView.m */; };
 		E94931401EEAA109008263CE /* VkApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E949313E1EEAA109008263CE /* VkApi.cpp */; };
 		E94931441EEAA232008263CE /* Country.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94931421EEAA232008263CE /* Country.cpp */; };
+		E98213D71FC9BA2300C8CEB7 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E98213D51FC9BA2300C8CEB7 /* Date.cpp */; };
 		E9F45E661EFAD58E001D9372 /* Presenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F45E621EFAD58E001D9372 /* Presenter.cpp */; };
 		E9F45E671EFAD58E001D9372 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F45E641EFAD58E001D9372 /* View.cpp */; };
 		E9F45E6A1EFAD600001D9372 /* CountriesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F45E691EFAD600001D9372 /* CountriesVC.m */; };
@@ -549,6 +550,8 @@
 		E94931421EEAA232008263CE /* Country.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Country.cpp; path = ../../Core/DataModel/Country.cpp; sourceTree = "<group>"; };
 		E94931431EEAA232008263CE /* Country.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Country.hpp; path = ../../Core/DataModel/Country.hpp; sourceTree = "<group>"; };
 		E94931471EEAA2C0008263CE /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		E98213D51FC9BA2300C8CEB7 /* Date.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
+		E98213D61FC9BA2300C8CEB7 /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
 		E9F45E621EFAD58E001D9372 /* Presenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Presenter.cpp; sourceTree = "<group>"; };
 		E9F45E631EFAD58E001D9372 /* Presenter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Presenter.hpp; sourceTree = "<group>"; };
 		E9F45E641EFAD58E001D9372 /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
@@ -1137,6 +1140,8 @@
 				E90EA6401E9A111D00D76E05 /* Bundle.hpp */,
 				E90EA6411E9A111D00D76E05 /* Data.cpp */,
 				E90EA6421E9A111D00D76E05 /* Data.hpp */,
+				E98213D51FC9BA2300C8CEB7 /* Date.cpp */,
+				E98213D61FC9BA2300C8CEB7 /* Date.hpp */,
 				E90EA6431E9A111D00D76E05 /* Dictionary.cpp */,
 				E90EA6441E9A111D00D76E05 /* Dictionary.hpp */,
 				E90EA6451E9A111D00D76E05 /* Error.cpp */,
@@ -1589,6 +1594,7 @@
 				E90EA7241E9A111D00D76E05 /* PathUtilities.cpp in Sources */,
 				E90EA6E51E9A111D00D76E05 /* AdapterView.cpp in Sources */,
 				E90EA6C71E9A111D00D76E05 /* Intent.cpp in Sources */,
+				E98213D71FC9BA2300C8CEB7 /* Date.cpp in Sources */,
 				E90EA7531E9A111D00D76E05 /* Wireframe.cpp in Sources */,
 				E90EA70E1E9A111D00D76E05 /* Image.cpp in Sources */,
 				E90EA6E71E9A111D00D76E05 /* Button.cpp in Sources */,
